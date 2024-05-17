@@ -12,21 +12,22 @@ User Login: Authenticates users and provides a JWT token for session management.
 
 JWT Token Validation: Validates the JWT token to secure endpoints and ensure only authenticated users can access certain resources.
 
--   Technology Stack
+#### Technology Stack
+
 -   Backend Framework: Express
 -   Architecture: Clean Architecture
 -   Database ORM: TypeORM
 -   Authentication: JSON Web Tokens (JWT)
 
-### Quick Start
+## Quick Start
 
-#### Using Docker Compose
+### Using Docker Compose
 
 Rename `.env.DEV` to `.env`
 
 Run the following command `docker compose up`
 
-#### Using NPM
+### Using NPM
 
 Install dependencies: `npm install`
 
