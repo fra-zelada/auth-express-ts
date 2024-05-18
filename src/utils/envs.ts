@@ -23,6 +23,11 @@ const TYPEORM_POSTGRES_DATABASE = env
     .required()
     .asString();
 const APP_PORT = env.get("APP_PORT").required().asPortNumber();
+const APP_CORS_ALLOWED_ORIGINS = env
+    .get("APP_CORS_ALLOWED_ORIGINS")
+    .required()
+    .asString()
+    .split(",");
 export const envs = {
     TYPEORM_POSTGRES_HOST,
     TYPEORM_POSTGRES_PORT,
@@ -30,4 +35,5 @@ export const envs = {
     TYPEORM_POSTGRES_PASSWORD,
     TYPEORM_POSTGRES_DATABASE,
     APP_PORT,
+    APP_CORS_ALLOWED_ORIGINS,
 };
